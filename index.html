@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ 
+	<title>RECETARIO</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="CSS/estilos_index.css">  <!--aqui ponemos la ruta de donde estará su respectivo css-->
+
+  <link href = "https://fonts.googleapis.com/css2? family = Permanent + Marker & display = swap" rel = "stylesheet"> <!--es la liga de donde irá a buscar el tipo de letra especial para la palabra POZOLE-->
+</head>
+<body>
+
+
+<header> <!--comienza con esta etiqueta nuestro headder--> 
+
+ <!--MENU--> 
+
+  <nav> 
+  <ul>
+   <li><a href="html/contacto.html">CONTACTO</a></li>   
+   <li><a href="html/ideas.html">IDEAS</a></li>
+   <li><a href="#">TIPOS</a>   <!--dentro de este li metemos otro ul y al final cerramos ese li-->
+     <ul>
+          <li><a href="html/rojo.html">ROJO</a></li> 
+          <li><a href="html/blanco.html">BLANCO</a></li>
+          <li><a href="html/verde.html">VERDE</a></li>
+          <li><a href="html/vegetariano.html">VEGETARIANO</a></li>
+          <li><a href="html/mariscos.html">MARISCOS</a></li>
+        </ul>
+  </li>  <!--es el li que cierra-->
+   <li><a href="#historia">HISTORIA</a></li>
+   <li> <a href="index.html">INICIO</a></li>
+  </ul> 
+  </nav> 
+
+<div id="logo"> <!--creamos un div porque lo vamos a mover y así será más fácil-->
+ <p><span id="verde">PO</span><span id="blanco">ZO</span><span id="rojo">LE</span></p> <!--usamos span aunque podriamos usar strong como lo hicimos en el ejercecio-->
+ </div> 
+
+</header>    <!--termina nuestro header-->
+
+
+<section id="imagen"> 
+  <h1 id ="inicio">TODO SOBRE EL POZOLE</h1>
+  
+</section>
+<section id="historia"> 
+<div class="contenedor">   <!--siempre se recomienda trabajar un div contenedor, este es como el margen quer daremos por defautl a todas las paginas, comienza inmediatamente después de la section y termina justo antes-->
+  
+  <h2 id="historia">HISTORIA</h2>
+  <div class="historiapozole"> <!--este div es crear una gran caja donde meteremos cajas mas pequeñas-->
+   <div class="texto">  <!--este es el div que hace caja el txto-->
+  <p>El <strong>pozole</strong>, un caldo preparado con maíz, carne, chile y verduras, ha sido un platillo muy popular en <strong>México </strong>  desde <em>la época prehispánica</em>. En recetas de cocina recabadas por los frailes españoles después de la conquista, se manifiesta que restos del cuerpo se cocían con Maíz. </p>
+
+  <p>Este platillo fue documentado por varios de los frailes <em> (algunos peninsulares, otros criollos o incluso mestizos)</em>< que llegaron a la <strong>Nueva España </strong>años después de la caída de Tenochtitlán. Entre ellos destaca Fray Bernardino de Sahagún, quien escribió sobre el singular platillo en su monumental obra: Historia general de las cosas de la Nueva España. Podemos afirmar que lo escribió con repugnancia, ya que los antiguos mexicas preparaban el pozole con carne de los cautivos sacrificados en algunas fiestas, principalmente la dedicada a Nuestro Señor el Desollado, Xipe Totec. En dicho festejo, que llevaba el nombre de <strong>Tlacaxipehualiztli</strong>, se realizaban los famosos sacrificios de rayamiento o gladiatorios, donde un guerrero cautivo era amarrado a un temalacatl (una gran piedra cilíndrica, ej. Piedra de Tizoc, del antiguo Palacio del Arzobispado o la Piedra del Sol) de la cintura para enfrentar a los grandes combatientes mexicas <em>(cuauhpilli y ocelopilli)</em> armados hasta los dientes. Después de ser muerto, el cautivo era desollado y desmembrado para su consumo. El muslo derecho siempre iba al palacio del Huey Tlahtoani, para expresar agradecimiento y respeto. Según comentaban los cronistas de Sahagún, los muslos era la parte donde se encontraba la carne con mejor sabor y textura. El muslo izquierdo y ambos brazos eran propiedad del guerrero que había capturado a su enemigo en batalla. Aunque él no los podía consumir, ya que desde la cosmovisión mexica el capturador se volvía su padre y el capturado su hijo. Sus familiares, compañeros de armas, los líderes del calpulli se disponían a comerlo en un gran banquete. Es importante aclarar que entre los mexicas existía la antropofagia ritual, en otras palabras, el consumo de carne humana con fines religiosos. Dicho privilegio estaba segmentado a grupo selecto de la gran población de <strong>Tenochtitlán</strong>, los nobles, los gobernantes, los guerreros y los teteuctin (señores). Cuando se llevaban a cabo estos rituales Sahagún comenta que la carne humada para consumo nunca era asada, sino hervida.
+  <a target ="_blank" href="https://www.unionguanajuato.mx/articulo/2018/09/12/cultura/la-sorprendente-historia-del-pozole">mas información</a>
+ </p>
+    </div>
+  <div class="imagen"><!--este es otro div que hace caja la imagen-->
+ <img src="https://imagenes.milenio.com/gxJkBywUz1WgFsMpcWjbHQg9ccI=/958x596/https://www.milenio.com/uploads/media/2018/08/14/moctezuma-comia-pozole-pierna-pollo_132_0_625_389.jpg" alt="historia del pozole" width="400px"><br><small>foto</small><br><br>
+  <a href="#logo">VOLVER ARRIBA</a>
+  </div>
+  </div>
+ </div>
+<hr>
+</section> 
+
+<!--METER VIDEO AL FINAL
+<video src="imagenes/video.mp4" width="400px" controls></video>
+<iframe width="960" height="715" src="https://www.youtube.com/embed/cqMfPS8jPys" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+-->
+ <section id="tipos">
+ <div class="contenedor">
+ <h2 id="tipos">TIPOS DE POZOLE</h2>
+  <div class="cuadros">
+
+   <div class="cuadro">
+ <h3>Pozole verde</h3>
+ <p>Comúnmente es preparado con tomates verdes, epazote y pepita de calabaza, de dice que proviene del estado de Guerrero, y en algunos casos se agrega chicharrón de puerco y aguacate para acompañar. </p>
+ <img src="https://img.culturacolectiva.com/cdn-cgi/image/f=auto,w=auto,q=80,fit=contain/content/2018/09/15/1537015926166/pozole-verde-medium.jpg" alt="pozoleverde" width="200px">
+ <a href="html/verde.html">leer más</a>
+    </div>
+
+   <div class="cuadro">
+ <h3>Pozole blanco </h3>
+ <p>Sin duda es el más conocido, se prepara con maíz cacahuazintle seco y con parte de la cabeza del puerco, se condimenta con jugo de limón, sal, salsa picante o chile piquín molido, lechuga, rábanos rebanados, cebolla picada y orégano molido.</p>
+  
+ <img src="https://img.culturacolectiva.com/cdn-cgi/image/f=auto,w=auto,q=80,fit=contain/content/2018/09/15/1537015858110/pozole-blanco-1-medium.jpg" alt="pozoleblanco" width="200px">
+ <a href="html/blanco.html">leer más</a>
+
+     </div>
+
+      <div class="cuadro">
+ <h3> Pozole rojo</h3>
+ <p> Se dice que este tipo de pozole proviene del estado de Jalisco, la principal diferencia es que se prepara con chile ancho y chile guajillo. Comúnmente lo comen con cerdo, pero hay quienes los preparan con pollo o pavo. </p>
+ <img src="https://img.culturacolectiva.com/cdn-cgi/image/f=auto,w=auto,q=80,fit=contain/content/2018/09/15/1537015969359/pzole-rojo-medium.jpg" alt="pozolerojo" width="200px">
+ <a href="html/rojo.html">leer más</a>
+    </div>
+
+     <div class="cuadro">
+ <h3>Pozole con mariscos</h3>
+ <p>Se prepara principalmente en las costas de Colima, Jalisco y Nayarit, aunque también lo consumen en otros estados. El principal ingrediente es el caldo de camarón que se prepara combinado con manteca de puerco, al final se le pone camarón, pescado, pulpo y callo de almeja. </p>
+ <img src="https://img.culturacolectiva.com/cdn-cgi/image/f=auto,w=auto,q=80,fit=contain/content/2018/09/15/1537016047094/pozole-mariscos-medium.jpg" alt="pozole de mariscos" width="200px">
+ <a href="html/mariscos.html">leer más</a>
+  </div>
+
+     <div class="cuadro">
+ <h3>Pozole vegetariano</h3>
+ <p>Si eres de los que lleva un estilo de vida vegetariano, existe una receta de pozole elaborado con champiñones y setas. Obviamente el caldo no está preparado con cabeza de puerco, como los tradicionales, en este caso se prepara con hojas de laurel, ajos, cebolla, chile guajillo y los champiñones o setas. </p>
+ <img src="https://img.culturacolectiva.com/cdn-cgi/image/f=auto,w=auto,q=80,fit=contain/content/2018/09/15/1537016117146/pozole-vegetariano-medium.jpg" alt="pozole vegetariano" width="200px"><br><br><br>
+ <a href="html/vegetariano.html">leer más</a>
+    </div>
+ <a href="#logo">VOLVER ARRIBA</a>
+   </div>
+</div>
+</section> 
+
+
+
+
+
+<footer>   <!--comienza nuestro footer-->
+      <div class="redes">   <!--div para encerrar esos elementos, hacerlos "caja" para poderlos maniobrar-->
+        <a target="_blank" href="https://www.facebook.com/"><img src="imagenes/facebook.png" width="30px"></a> <!--la imagen la hago enlace, la imagen la descargo de flaticon.com y la guardo en la carpeta imagenes-->
+        <a target="_blank" href="https://www.instagram.com/"><img src="imagenes/instagram.png" width="30px"></a> 
+     </div> 
+      
+       <p>Contacto Tel. 5555555 | Correo: info@mail.com </p> <!--texto para el contacto-->
+</footer> <!--termina nuestro footer-->
+
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+body{   /*Iniciamos indicando que a todo el body le quite los formatos por default para despues irle dando a cada parte*/
+   margin: 0;    /*margen 0 a todo de inicio*/
+   font-family: sans-serif;  /*tipo de letra para todo el docuemnto, ya si quiero cambiarla lo hago especificamente*/
+
+  }
+ 
+.contenedor {
+   max-width: 1280px;
+   width: 90%;
+   margin: auto;
+}
+
+/*menu*/
+
+nav ul {     /*le indique que a la lista que esta dentro de la etiqueta nav, asi evito que lo haga con todas las listas que pueda tener despues*/
+    list-style-type: none;  /*le quita los puntos*/
+    margin: 0;              /*sin margen, es decir que quede bien pegada a la orilla de la pantalla*/
+    padding: 0;           /*lo mismo que en el margen*/
+    overflow: auto;         /* que se adapte al tamaño*/
+    background-color: #333;   /*caja de color negro*/
+    padding-bottom: 10px;
+}
+
+
+nav li {         /*los li que esten dentro de la etiqueta nav, nav es el elemento padre y li elemento hijo porque esta dentro de*/
+    float: right;
+       /*que cada li se ponga arriba y a la derecha*/   
+}
+
+
+nav li a {      /*los enlaces que estan dentro de los li y a la vez dentro de nav*/
+    display: block;     /*quitarle formato de enlace y abarcar todo el tamaño*/
+    color: white;        /*letras blancas*/
+    text-align: center;   /*que esten al centro en el epacio que les corresponde*/
+    padding: 14px 16px;   /*colchon arriba y abajo de 14px y de 16 a la izquierda y la derecha*/
+    text-decoration: none;   /*que no este subrayado el enlace*/
+}
+
+  nav li ul {               /*a la lista que sale de un li*/
+        display:none;       /*que no se vea*/
+        position:absolute;  /*su posicion*/
+          }
+
+    
+nav li a:hover {          /*que al pasar el cursor sobre los enlaces que estan dentro de los li haga algo*/
+    background-color: #111;  /*ese algo sera cambiar de color*/
+}
+
+
+nav li:hover ul{         /*que al pasar el cursor sobre el li que contiene una ul*/
+      display:block;     /*se mostrará ese contenido oculto*/
+}
+
+/*logo*/
+ 
+#logo{                  /*el div que le pusimos y contiene la palabra POZOLE*/
+	position: absolute;   /*que permita moverlo**/
+	top: 0;               /*que lo mueva dejando nada de espacio arriba*/
+	left: 30px;           /*que lo separe a la izquierda de la pantalla*/
+  }
+
+#verde{
+	font-family: 'Permanent Marker', cursive;     /*tipo de letra para la palabra PO*/
+	font-size: 2em;                               /*Tamaño de 2 veces mas de lo predeterminado por el navegador*/
+	color: green;                                 /*color verde*/
+}
+#blanco{
+	font-family: 'Permanent Marker', cursive;    
+	font-size: 2em;
+	color: white;
+}
+#rojo{
+	font-family: 'Permanent Marker', cursive;
+	font-size: 2em;
+	color: red;
+}
+ #imagen{
+  width:100%;
+ }
+ h2{
+  text-align: center;
+  font-family: fantasy;
+  font-size: 2em;
+}
+ table{
+  border: solid 2px;
+  text-align: center;
+ }
+ thead{
+  background-color: #111;
+  color:#fff;
+ }
+ tbody{
+  background-color: #E3E9E3;
+ }
+.tabla{
+   display: flex;        
+   justify-content: space-around;  
+}
+
+.tabla .ingredientes{
+  width: 50%;  
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*PIE DE PAGINA*/
+footer{                              /*a toda la etiqueta footer le aplicara lo siguiente:*/
+  background: #333;                  /*una caja de color*/
+  padding: 40px;                     /*un colchon de 40px*/
+  text-align: center;                 /*que el texto lo centre*/
+  margin-top: 30px;                   /*separacion con el elemnto mas cercano arriba*/
+}
+footer img{                         /*las imagenes que esten dentro de footer y no todas las imágenes de la página*/
+  margin: 0 40px;                   /*que esten separadas entre si*/  
+  transform: rotate(0);             /*un efecto de rotación, aqui se establece el efecto pero aun no se aplica, ese lo haremos abajo, son dos pasos, establecer y despues aplicar*/ 
+  transition:0.4s;                  /*que comiencen a rotar despues de .4s de haber pasado el cursor sobre la imagen*/
+}
+footer img:hover{                   /*que al momento de pasar el cursor haga algo*/
+  transform: rotate(360deg);        /*ese algo será girar 360 grados*/
+}
+footer p{                           /*los p que esten en footer, asi lo ponemos para que afecte solo a estos p y no a todos los que encuentre en la página*/
+  color: #fff;                       /*color blanco*/
+  margin-top: 40px;                  /*margen arriba con las imagenes*/
+}
+
